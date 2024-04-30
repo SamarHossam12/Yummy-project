@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/css/all.min.css">
+    <link rel="stylesheet" href="./Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <title>Search</title>
+</head>
+<body>
+    <aside>
+        <nav class="navbar p-0 bg-white fixed-top z-3">
+          <div class="container-fluid">
+            <div class="navbar-start d-flex flex-column justify-content-between py-4  text-center">
+              <img src="Assets\images\logo.png" alt="yummy logo" class="w-100">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="nav-icons d-flex flex-column fs-5">
+                <i class="fa-solid fa-globe m-2 pointer-event"></i>
+                <i class="fa-sharp fa-solid fa-share-nodes"></i>
+              </div>
+            </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="search.html">Search</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Categories</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Area</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Ingredints</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-solid fa-globe "></i>
+                <p>Copyright Â© 2019 All Rights Reserved.</p>
+              </div>
+            </div>
+          </div>
+      </nav>
+    </aside>
+    <div class="container p-4" id="searchContainer">
+       <div class="row">
+        <div class="col-md-6">
+            <input type="search" class="form-control bg-transparent text-white" id="searchByName" placeholder="Search By Name">
+        </div>
+        <div class="col-md-6">
+                <input type="search" class="form-control bg-transparent text-white" id="searchByfirstLetter" placeholder="Search By First Letter">
+           </div>
+       </div>
+          
+    </div>
+    <script src="./Assets/js/index.js"></script>
+    <script src="./Assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
